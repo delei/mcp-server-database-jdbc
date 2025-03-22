@@ -1,0 +1,30 @@
+spring:
+  main:
+    banner-mode: off
+  application:
+    name: mcp-server-database-jdbc
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    serialization:
+      fail_on_empty_beans: false
+    defaultPropertyInclusion: NON_EMPTY
+    deserialization:
+      fail_on_unknown_properties: false
+    parser:
+      allow_unquoted_control_chars: true
+      allow_single_quotes: true
+  ai:
+    mcp:
+      server:
+        name: database-jdbc-mcp-server
+        version: 1.0.0
+logging:
+  file:
+    name: ./logs/${spring.application.name}.log
+  level:
+    root: INFO
+mcp:
+  jdbc:
+    url: jdbc:mysql://192.168.1.206:3306/frameboot_backend?characterEncoding=utf8&useSSL=false&useInformationSchema=true
+    username: root
+    password: data68868569

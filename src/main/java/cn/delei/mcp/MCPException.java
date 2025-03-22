@@ -1,4 +1,4 @@
-package cn.delei.ai.mcp;
+package cn.delei.mcp;
 
 /**
  * 自定义异常
