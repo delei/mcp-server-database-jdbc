@@ -1,7 +1,8 @@
-package cn.delei.mcp;
+package cn.delei.mcp.common;
 
 /**
  * 自定义异常
+ *
  * @author deleiguo
  */
 public class MCPException extends RuntimeException {
